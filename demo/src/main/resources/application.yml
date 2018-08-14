@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+spring:
+  thymeleaf:
+    cache: false
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      exclude: src/main/resources
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+  endpoint:
+    metrics:
+      enabled: true

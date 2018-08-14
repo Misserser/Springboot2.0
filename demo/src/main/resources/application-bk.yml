@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+logging:
+  level:
+    com:
+      example:
+        demo: DEBUG
+
+management:
+  security:
+    enabled: true
+
+endpoints:
+  mappings:
+    enabled: true
+
+security:
+  user:
+    name: demo
+    password: demo
